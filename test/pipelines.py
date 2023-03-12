@@ -5,11 +5,9 @@
 
 
 # useful for handling different item types with a single interface
-import os
-
 
 class TestPipeline:
     def process_item(self, item, spider):
-        val = os.getenv('MY_CUSTOM_VALUE', 'not banana')
+        val = spider.settings.get('MY_CUSTOM_VALUE')
         print('nice:', val)
         return item
