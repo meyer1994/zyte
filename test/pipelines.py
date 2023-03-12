@@ -6,7 +6,6 @@
 
 # useful for handling different item types with a single interface
 import os
-from itemadapter import ItemAdapter
 
 
 class TestPipeline:
