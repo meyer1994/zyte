@@ -94,4 +94,5 @@ REQUEST_FINGERPRINTER_IMPLEMENTATION = "2.7"
 TWISTED_REACTOR = "twisted.internet.asyncioreactor.AsyncioSelectorReactor"
 FEED_EXPORT_ENCODING = "utf-8"
 
+POSTGRES_HOST = os.getenv('POSTGRES_HOST', 'postgresql://postgres@localhost:5432/postgres')
 MY_CUSTOM_VALUE = os.getenv('MY_CUSTOM_VALUE')
