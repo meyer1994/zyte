@@ -4,5 +4,5 @@
 
 ```sh
 shub login
-shub deploy 641859
+shub deploy
 ```
