@@ -5,6 +5,7 @@
 
 
 # useful for handling different item types with a single interface
+import pandas as pd
 import sqlalchemy as sa
 
 TABLE = '''
@@ -42,5 +43,6 @@ class TestPipeline:
     def process_item(self, item, spider):
         val = spider.settings.get('MY_CUSTOM_VALUE')
         print('nice:', val)
+        print('pandas:', pd.__version__)
         self.conn.execute(sa.text(INSERT), item)
         return item
